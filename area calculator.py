@@ -2,8 +2,6 @@ from rich import print
 from tqdm import tqdm
 import time
 
-# modifica per testare github pull extension
-
 
 def area_calc():
     lista_fig_geom = ["1", "2", "3", "4"]
@@ -25,7 +23,7 @@ def area_calc():
             except ValueError:
                 print("Non hai inserito un numero valido. Inserisci il raggio: ")
         raggio = float(raggio)
-        area = float((raggio*raggio) * 3.14)
+        area = round(float((raggio*raggio) * 3.14), 2)
         print(f"\nL'area del cerchio, avente raggio {raggio}, è: ", area)
 
     elif fig_geom == "3":
@@ -45,7 +43,7 @@ def area_calc():
             except ValueError:
                 print("Non hai inserito un numero. Inserisci l'altezza: ")
         altezza = float(altezza)
-        area = float(base * altezza)
+        area = round(float(base * altezza), 2)
         print(
             f"\nL'area del rettangolo, avente base {base} ed altezza {altezza}, è: ", area)
 
@@ -59,7 +57,7 @@ def area_calc():
             except ValueError:
                 print("Non hai inserito un numero. Inserisci lunghezza del lato:")
         base = float(base)
-        area = float(base ** 2)
+        area = round(float(base ** 2), 2)
         print(
             f"\nL'area del quadrato, avente per lato {base}, è: ", area)
 
@@ -80,7 +78,7 @@ def area_calc():
             except ValueError:
                 print("Non hai inserito un numero. Inserisci l'altezza:")
         altezza = float(altezza)
-        area = float((base * altezza)/2)
+        area = round(float((base * altezza)/2), 2)
         print(
             f"\nL'area del triangolo, avente per base {base} ed altezza {altezza}, è: ", area)
 
