@@ -2,7 +2,7 @@ from rich import print
 from tqdm import tqdm
 import time
 
-# modifica per testre github pull exntension
+# modifica per testare github pull extension
 
 
 def area_calc():
