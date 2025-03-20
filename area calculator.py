@@ -2,6 +2,8 @@ from rich import print
 from tqdm import tqdm
 import time
 
+# modifica per testre github pull exntension
+
 
 def area_calc():
     lista_fig_geom = ["1", "2", "3", "4"]
